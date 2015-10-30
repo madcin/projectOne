@@ -1,8 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1s, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
-    <title>Project Template</title>
+    <style>
+        div#page{
+            background: #E5F0FF;
+            color:#0033CC;
+        }
+        #firstbtn{
+           background-color:#FF4D94;
+           color:#00CCFF; 
+        }
+        #secondbtn{
+            background-color:#9900FF;
+            color:#E0B3FF;
+        }
+        #lastbtn{
+            background-color:#FF5050;
+            color:#FFB6B6;
+        }
+        #footer{
+            background-color:#280000
+        }
+    </style>
+    <title>Project One</title>
     <link rel="stylesheet" href="css/jquery.mobile.structure.css">
     <link rel="stylesheet" href="css/jquery.mobile.theme.css">
     <link rel="stylesheet" href="css/jquery.mobile.icons.css">
@@ -15,26 +35,36 @@
         function deviceReady(){
             
         }
+        function firstbtn(){
+            alert("Will ProjectOne work!");
+        }
+        function secondbtn(){
+            alert ("Do you UNDERSTAND,really? What you're doing?!!!");
+        }
+        function lastbtn(){
+            alert ("JERMAINE!!!!!!");
+        }
     </script>
 </head>
 <body>
-    <div data-role="page">
+    <div id="page" data-role="page">
         <div data-role="header">
             <h1>Header</h1>
         </div>
+        
         <div role="main" class="ui-content">
             <div>All your codez are belong to us!</div>
-            I am some content
+            I am some content, Where ALL content belongs!
             My first GIT Project thingy!
 
-            <button onclick = alert "Will ProjectOne work!">Click me!</button>
-            <button onclick = alert "Do you UNDERSTAND?!!!">Click it!</button>
-
+            <button id= firstbtn onclick = >Click me!</button>
+            <button id= secondbtn onclick = >Click it!</button>
+            <button id= lastbtn onclick= >Who's you hero?</button>
             <h3>Conflict!</h3>
-
-        </div>
-        <div data-role="footer">
-            <h1>Footer</h1>
+         </div>
+        
+        <div id=footer data-role="footer">
+            <h1>To be continued...</h1>
         </div>
     </div>
 </body>
